@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="cartDrawer"
+  aria-labelledby="cartDrawerLabel"
+>
+  <div class="offcanvas-header">
+    <h5 id="cartDrawerLabel">My Cart</h5>
+    <button
+      type="button"
+      class="btn-close text-reset"
+      data-bs-dismiss="offcanvas"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <app-cart></app-cart>
+    <!-- Your cart component -->
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>

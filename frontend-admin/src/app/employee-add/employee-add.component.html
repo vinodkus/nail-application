@@ -1,0 +1,81 @@
+<div class="card">
+    <div class="card-header">
+      <h3>Add New Employee</h3>
+    </div>
+    <div class="card-body">
+      <form #form="ngForm">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+          <input type="text" #name="ngModel" class="form-control" [(ngModel)]="employee.name" name="name" required />
+          @if (name.errors?.['required'] && name.touched && name.dirty) 
+          {
+            <span class="text-danger">Name is required</span>
+          }
+          </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="mb-3">
+              <label for="role" class="form-label">Role</label>
+              <input type="text" #role="ngModel" class="form-control" [(ngModel)]="employee.role" name="role" required />
+
+             @if(role.errors?.['required'] && role.touched && role.dirty)
+             {
+               <span class="text-danger">Role is required</span>
+              }
+            </div>
+          </div>  
+
+          <div class="col-md-4">
+            <div class="mb-3">
+              <label for="image" class="form-label">Upload Image</label>
+              <input type="file" (change)="onFileSelected($event)" />
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="mb-3">        
+              <label for="email" class="form-label">State</label>
+              <select class="form-select" #state="ngModel" required name="state" [(ngModel)]="selectedStateId" (change)="selectedStateId != null && getDistrictsByStateId(selectedStateId)">
+                <option value="">Select State</option>  
+                <option *ngFor="let state of stateList" [value]="state.stateId">{{ state.stateName }}</option>                
+              </select>              
+              <span *ngIf="state.errors?.['required'] && state.touched && state.dirty" class="text-danger">State is required</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-3">
+              <label for="email" class="form-label">District</label>
+              <select class="form-select" required #district="ngModel" [(ngModel)]="selectedDistrictId" name="district" (change)="selectedDistrictId != null && getCitiesByDistrictId(selectedDistrictId)">
+                <option value="">Select District</option> 
+                <option *ngFor="let dist of districtList" [value]="dist.districtId">{{ dist.districtName }}</option>            
+              </select>
+              <span *ngIf="district.errors?.['required'] && district.touched && district.dirty" class="text-danger">District is required</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-3">
+              <label for="email" class="form-label">City</label>
+              <select class="form-select" required [(ngModel)]="selectedCityId" #city="ngModel" name="city">
+                <option value="">Select City</option>    
+                <option *ngFor="let city of cityList" [value]="city.cityId">{{city.cityName}}</option>            
+              </select>
+              <span *ngIf="city.errors?.['required'] && city.touched && city.dirty" class="text-danger">City is required</span>
+            </div>
+          </div>
+        </div>
+        
+        
+    <!-- <button type="submit" class="btn btn-primary">Add Employee</button> -->
+    <button mat-raised-button color="primary" [disabled]="form.invalid" type="button" (click)="onSave()">Add Employee</button>
+      </form>
+    </div>
+  </div>
+  

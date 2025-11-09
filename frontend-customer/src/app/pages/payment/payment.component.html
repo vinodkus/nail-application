@@ -1,0 +1,243 @@
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <!-- Updated Progress Bar -->
+      <div class="progress-steps mb-4">
+        <div class="step completed">
+          <span>1</span>
+          <small>Order Summary</small>
+        </div>
+        <div class="step active">
+          <span>2</span>
+          <small>Payment</small>
+        </div>
+        <div class="step">
+          <span>3</span>
+          <small>Verification</small>
+        </div>
+        <div class="step">
+          <span>4</span>
+          <small>Confirmation</small>
+        </div>
+      </div>
+
+      <h2 class="text-center mb-4">Complete Your Payment</h2>
+      
+      <!-- Important Notice -->
+      <div class="alert alert-info mb-4">
+        <h5><i class="fas fa-info-circle me-2"></i>Important Notice</h5>
+        <p class="mb-0">
+          Your order will be confirmed only after payment verification. 
+          This usually takes 2-4 hours during business hours.
+        </p>
+      </div>
+      
+      <div class="row">
+        <!-- QR Code Section -->
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <h4 class="card-title text-success">
+                <i class="fas fa-qrcode me-2"></i>
+                Scan & Pay
+              </h4>
+              
+              <!-- Your QR Code -->
+              <img src="assets/images/QR.jpg" 
+                   alt="UPI QR Code" 
+                   class="qr-code img-fluid my-3"
+                   style="max-width: 250px; border: 2px solid #e9ecef; border-radius: 10px;">
+              
+              <div class="payment-info">
+                <div class="info-item">
+                  <i class="fas fa-user me-2"></i>
+                  <strong>Account:</strong> Glamorous Looks Beauty Salon
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-id-card me-2"></i>
+                  <strong>UPI ID:</strong> shalinissmvk&#64;okicici
+                </div>
+                <div class="info-item amount-display">
+                  <i class="fas fa-rupee-sign me-2"></i>
+                  <strong>Amount:</strong> ₹{{totalAmount}}
+                </div>
+              </div>
+              
+              <div class="alert alert-warning mt-3">
+                <small>
+                  <i class="fas fa-exclamation-triangle me-1"></i>
+                  Please pay <strong>exactly ₹{{totalAmount}}</strong> and save transaction ID
+                </small>
+              </div>
+
+              <!-- Payment Instructions -->
+              <div class="instructions mt-3">
+                <h6 class="text-muted">Payment Steps:</h6>
+                <ol class="text-start small">
+                  <li>Scan QR code or use UPI ID</li>
+                  <li>Pay exact amount: <strong>₹{{totalAmount}}</strong></li>
+                  <li>Save <strong>Transaction ID</strong></li>
+                  <li>Enter details on right side</li>
+                  <li>Wait for verification (2-4 hours)</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Payment Verification Form -->
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title">
+                <i class="fas fa-check-circle me-2 text-success"></i>
+                Submit Payment Details
+              </h4>
+
+              <div class="alert alert-light border mb-3">
+                <small>
+                  <i class="fas fa-clock me-1 text-warning"></i>
+                  <strong>Note:</strong> After submission, your order will be in "Verification" state. 
+                  You'll receive confirmation after we verify your payment.
+                </small>
+              </div>
+              
+              <form (ngSubmit)="verifyPayment()" #paymentForm="ngForm">
+                <div class="mb-3">
+                  <label class="form-label">UPI Transaction ID *</label>
+                  <input type="text" class="form-control" 
+                         [(ngModel)]="transactionId" 
+                         name="transactionId" 
+                         placeholder="e.g., 123456789012"
+                         required
+                         #transId="ngModel">
+                  <div class="form-text small">
+                    Find this in your bank/UPI app under transaction history
+                  </div>
+                  <div *ngIf="transId.invalid && transId.touched" class="text-danger small">
+                    Transaction ID is required
+                  </div>
+                </div>
+                
+                <div class="mb-3">
+                  <label class="form-label">Payment Date & Time *</label>
+                  <input type="datetime-local" class="form-control" 
+                         [(ngModel)]="paymentDate" 
+                         name="paymentDate" 
+                         required
+                         #payDate="ngModel">
+                  <div *ngIf="payDate.invalid && payDate.touched" class="text-danger small">
+                    Payment date is required
+                  </div>
+                </div>
+                
+                <div class="mb-3">
+                  <label class="form-label">Amount Paid *</label>
+                  <input type="number" class="form-control" 
+                         [(ngModel)]="paidAmount" 
+                         name="paidAmount" 
+                         [value]="totalAmount"
+                         required
+                         min="1"
+                         #paidAmt="ngModel">
+                  <div *ngIf="paidAmt.invalid && paidAmt.touched" class="text-danger small">
+                    Please enter valid amount
+                  </div>
+                </div>
+
+                <!-- Screenshot Upload -->
+                <div class="mb-3">
+                  <label class="form-label">Payment Screenshot (Optional)</label>
+                  <input type="file" class="form-control" 
+                         (change)="onFileSelected($event)"
+                         accept="image/*">
+                  <div class="form-text small">
+                    Upload payment confirmation screenshot for faster verification
+                  </div>
+                </div>
+                
+                <div class="d-grid gap-2">
+                  <button type="submit" 
+                          class="btn btn-success btn-lg"
+                          [disabled]="paymentForm.invalid || isSubmitting">
+                    <i class="fas fa-paper-plane me-2"></i>
+                    {{isSubmitting ? 'Submitting...' : 'Submit for Verification'}}
+                  </button>
+                  
+                  <button type="button" 
+                          class="btn btn-outline-secondary"
+                          (click)="selectCOD()"
+                          style="display: none;"
+                          [disabled]="isSubmitting">
+                    <i class="fas fa-money-bill-wave me-2"></i>
+                    {{isSubmitting ? 'Processing...' : 'Cash on Delivery (COD)'}}
+                  </button>
+                </div>
+
+                <!-- Additional Info -->
+                <div class="mt-3 text-center" style="display: none;">
+                  <small class="text-muted">
+                    <i class="fas fa-phone me-1"></i>
+                    Need help? Contact: +91-XXXXXXXXXX
+                  </small>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verification Process Info -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card border-info">
+            <div class="card-body">
+              <h5 class="card-title text-info">
+                <i class="fas fa-shield-alt me-2"></i>
+                Payment Verification Process
+              </h5>
+              <div class="row">
+                <div class="col-md-3 text-center">
+                  <div class="process-step">
+                    <div class="step-icon bg-primary">
+                      <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h6>1. Make Payment</h6>
+                    <p class="small">Pay via UPI using QR code or ID</p>
+                  </div>
+                </div>
+                <div class="col-md-3 text-center">
+                  <div class="process-step">
+                    <div class="step-icon bg-warning">
+                      <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h6>2. Submit Details</h6>
+                    <p class="small">Enter transaction ID and details</p>
+                  </div>
+                </div>
+                <div class="col-md-3 text-center">
+                  <div class="process-step">
+                    <div class="step-icon bg-info">
+                      <i class="fas fa-search"></i>
+                    </div>
+                    <h6>3. Admin Verification</h6>
+                    <p class="small">We verify your payment (2-4 hours)</p>
+                  </div>
+                </div>
+                <div class="col-md-3 text-center">
+                  <div class="process-step">
+                    <div class="step-icon bg-success">
+                      <i class="fas fa-check-double"></i>
+                    </div>
+                    <h6>4. Order Confirmed</h6>
+                    <p class="small">You receive order confirmation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

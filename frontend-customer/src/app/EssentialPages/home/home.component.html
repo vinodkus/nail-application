@@ -1,0 +1,52 @@
+<div class="home-page">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Elevate Your Style with Perfect Nails</h1>
+      <p>Professional nail extensions and custom press-on nails that make you shine</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" routerLink="/services">View Services</button>
+        <button class="btn-secondary" routerLink="/contact">Book Appointment</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/hero-nails.jpg" alt="Beautiful Nail Art">
+    </div>
+  </section>
+
+  <!-- Featured Services -->
+  <section class="featured-services">
+    <h2>Our Signature Services</h2>
+    <div class="services-grid">
+      <div class="service-card" routerLink="/services/nail-extensions">
+        <div class="service-icon">💅</div>
+        <h3>Nail Extensions</h3>
+        <p>Professional acrylic, gel, and dip powder extensions</p>
+      </div>
+      <div class="service-card" routerLink="/services/press-on-nails">
+        <div class="service-icon">✨</div>
+        <h3>Press-On Nails</h3>
+        <p>Custom designed reusable press-on nails</p>
+      </div>
+      <div class="service-card" routerLink="/services/nail-care">
+        <div class="service-icon">🌟</div>
+        <h3>Nail Care</h3>
+        <p>Manicures, pedicures, and nail treatments</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Gallery Preview -->
+  <section class="gallery-preview">
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" *ngFor="let item of galleryItems">
+        <img [src]="item.image" [alt]="item.title">
+        <div class="gallery-overlay">
+          <h4>{{item.title}}</h4>
+        </div>
+      </div>
+    </div>
+    <button class="btn-outline" routerLink="/gallery">View Full Gallery</button>
+  </section>
+</div>

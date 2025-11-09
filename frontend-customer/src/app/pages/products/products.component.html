@@ -1,0 +1,72 @@
+<!-- Products Section -->
+<!-- Exclusive Products Heading -->
+<div class="container mt-5">
+  <h2 class="text-center fw-bold">Exclusive Press On Nails</h2>
+
+  <!-- Categories Tabs (unchanged) -->
+  <div class="d-flex justify-content-center my-3">
+    <button
+      class="btn btn-link"
+      [ngClass]="
+        selectedCategoryId == cat.categoryId
+          ? 'text-danger fw-bold'
+          : 'text-dark'
+      "
+      (click)="getAllProductsByCatId(cat.categoryId)"
+      *ngFor="let cat of categoryArray"
+    >
+      {{ cat.categoryName }}
+    </button>
+  </div>
+
+  <div class="row" *ngIf="this.noProductsFound">
+    <div class="col text-center">
+      <h3 class="text-danger">No Products Found</h3>
+    </div>
+  </div>
+
+  <!-- Product Cards with Clickable Areas -->
+  <div class="row" *ngIf="!this.noProductsFound">
+    <div class="col-md-3 mb-4" *ngFor="let product of productsArray">
+      <div class="card h-100 shadow-sm">
+        <!-- Make image clickable -->
+        <div class="position-relative">
+          <img
+            [src]="getImageUrl(product.productImageUrl)"
+            class="card-img-top cursor-pointer"
+            [alt]="product.productName"
+            (click)="goToProductDetails(product.productId)"
+            style="cursor: pointer;"
+          />
+        </div>
+        <div class="card-body text-center">
+          <!-- Make product title clickable -->
+          <h5 
+            class="card-title cursor-pointer" 
+            (click)="goToProductDetails(product.productId)"
+            style="cursor: pointer; color: #007bff;"
+          >
+            {{ product.productSku }}
+          </h5>
+          <p class="text-danger">
+            {{product.productPrice | currency:'INR':true:'1.2-2'}} 
+            <br/>
+            <span class="text-success">{{ product.productShortName }}</span> 
+          </p>
+          <div class="d-grid gap-2">
+            <button class="btn btn-success" (click)="addToCart(product)">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+            <!-- Add View Details button -->
+            <button 
+              class="btn btn-outline-primary" 
+              (click)="goToProductDetails(product.productId)"
+            >
+              <i class="bi bi-eye"></i> View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

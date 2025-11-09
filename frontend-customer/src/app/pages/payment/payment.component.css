@@ -1,0 +1,89 @@
+/* Progress Steps */
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.progress-steps::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #e9ecef;
+  z-index: 1;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.step span {
+  width: 30px;
+  height: 30px;
+  background: #6c757d;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 5px;
+  font-size: 0.9rem;
+}
+
+.step.completed span {
+  background: #28a745;
+}
+
+.step.active span {
+  background: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.step small {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.step.active small {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Process Steps */
+.process-step {
+  padding: 15px 0;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .progress-steps {
+    flex-wrap: wrap;
+  }
+  
+  .step {
+    flex: 0 0 50%;
+    margin-bottom: 15px;
+  }
+  
+  .process-step {
+    margin-bottom: 20px;
+  }
+}

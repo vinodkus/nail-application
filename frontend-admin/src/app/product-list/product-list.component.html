@@ -1,0 +1,61 @@
+<div class="container mt-3">
+  <h2>Product List</h2>
+
+  <div class="mb-3">
+    <label for="categorySelect">Filter by Category:</label>
+    <select
+      id="categorySelect"
+      class="form-select"
+      [(ngModel)]="selectedCategoryId"
+      (ngModelChange)="onCategoryChange($event)"
+    >
+      <option [ngValue]="null">All Categories</option>
+      <option
+        *ngFor="let category of categories"
+        [value]="category.categoryId"
+      >
+        {{ category.categoryName }}
+      </option>
+    </select>
+  </div>
+
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>SKU</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Short Name</th>
+        <th>Description</th>
+        <th>Delivery Time</th>
+        <th>Category</th>   
+        <th>Is Active</th>             
+        <th>Image</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of filteredProducts">
+        <td>{{ product.productSku }}</td>
+        <td>{{ product.productName }}</td>
+        <td>{{ product.productPrice | currency:'INR':'symbol' }}</td>
+        <td>{{ product.productShortName }}</td>
+        <td>{{ product.productDescription }}</td>
+        <td>{{ product.deliveryTimeSpan }}</td>
+        <td>{{ product.categoryName }}</td>
+        <td>{{ product.isActive ? 'Yes' : 'No' }}</td>
+        <td><img [src]="getImageUrl(product)" alt="Product" style="width:60px;height:auto;" /></td>
+         <td>
+        <!-- Edit Button -->
+        <button class="btn btn-sm btn-primary me-1" (click)="editProduct(product)">
+          Edit
+        </button>
+        <!-- Delete Button -->
+        <button class="btn btn-sm btn-danger" (click)="deleteProduct(product.productId)">
+          Delete
+        </button>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

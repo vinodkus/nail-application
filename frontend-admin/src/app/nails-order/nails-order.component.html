@@ -1,0 +1,59 @@
+<div class="container mt-3">
+  <h2>Nails Order List</h2>
+
+  
+
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Order Id</th>
+        <th>Order Number</th>
+
+        <th>FullName</th>
+        <th>Email</th>
+
+        <th>PhoneNumber</th>
+        <th>TotalAmount</th>
+        <th>OrderDate</th>
+
+        <th>Transaction Id</th>   
+        <th>Payment Date</th>   
+        <th>Status</th>   
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of NailsOrder">
+
+        <td>{{order.orderId}}</td>
+        <td>{{order.orderNumber}}</td>
+
+        <td>{{order.fullName}}</td>
+        <td>{{order.email}}</td>
+
+        <td>{{order.phoneNumber}}</td>
+        <td>{{order.totalAmount}}</td>
+        <td>{{order.orderDate | date:'dd-MMM-yyyy hh:mm a' }}</td>
+
+        <td>{{order.transactionId}}</td>
+        <td>{{order.paymentDate}}</td>
+        <td>
+      <select [(ngModel)]="order.status" class="form-select" (change)="updateOrderStatus(order)">
+    <option value="Pending">Pending</option>
+    <option value="Processing">Processing</option>
+    <option value="Completed">Completed</option>
+    <option value="Cancelled">Cancelled</option>
+    <option value="Shipped">Shipped</option>
+    <option value="Delivered">Delivered</option>
+    <option value="Returned">Returned</option>
+    <option value="Refunded">Refunded</option>
+    <option value="OnHold">OnHold</option>
+    <option value="PaymentPendingVerification">Payment Pending Verification</option>
+    <option value="PaymentVerified">Payment Verified</option>
+    <option value="PaymentFailed">Payment Failed</option>
+
+  </select>
+      </tr>
+    </tbody>
+  </table>
+</div>

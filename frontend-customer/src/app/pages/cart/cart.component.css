@@ -1,0 +1,115 @@
+/* Remove default min-width that forces scroll */
+.cart-table-wrapper {
+  overflow-x: visible;
+  width: 100%;
+}
+
+/* Ensure parent container can grow */
+.p-3 {
+  width: 100%;
+  max-width: none;
+}
+
+/* Optional: Let table grow */
+table.table-auto {
+  width: 100%; /* or max-content if you want natural expansion */
+  table-layout: auto;
+}
+
+/* Keep table cells clean */
+table.table-auto th,
+table.table-auto td {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Remove default min-width that forces scroll */
+.cart-table-wrapper {
+  overflow-x: visible;
+  width: 100%;
+}
+
+/* Ensure parent container can grow */
+.p-3 {
+  width: 100%;
+  max-width: none;
+}
+
+/* Optional: Let table grow */
+table.table-auto {
+  width: 100%;
+  table-layout: auto;
+}
+
+/* Keep table cells clean */
+table.table-auto th,
+table.table-auto td {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Style for size dropdown */
+.form-select-sm {
+  width: 80px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+/* Fix for modal backdrop and interactivity */
+.modal {
+  z-index: 1060 !important; /* Ensure proper z-index */
+}
+
+.modal-backdrop {
+  z-index: 1050 !important; /* Ensure backdrop is behind modal */
+}
+
+/* Ensure modal is clickable and interactive */
+.modal-content {
+  pointer-events: auto !important;
+}
+
+.modal-dialog {
+  pointer-events: none !important; /* Dialog should not block clicks */
+}
+
+/* Remove any parent container styles that might interfere */
+.cart-table-wrapper {
+  overflow-x: visible;
+  width: 100%;
+}
+
+.p-3 {
+  width: 100%;
+  max-width: none;
+}
+
+table.table-auto {
+  width: 100%;
+  table-layout: auto;
+}
+
+table.table-auto th,
+table.table-auto td {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Style for size dropdown */
+.form-select-sm {
+  width: 80px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Ensure modal images display properly */
+.guide-step img {
+  max-height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Fix for modal body scrolling */
+.modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}

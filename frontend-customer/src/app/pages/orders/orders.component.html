@@ -1,0 +1,132 @@
+<div class="container mt-4" *ngIf="!loading; else loadingTpl">
+  <h2 class="mb-4">Your Order History</h2>
+
+  <!-- Order Status Filters -->
+  <div class="order-filters mb-4">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-outline-primary" 
+              [class.active]="currentFilter === 'all'"
+              (click)="filterOrders('all')">
+        All Orders
+      </button>
+      <button type="button" class="btn btn-outline-warning" 
+              [class.active]="currentFilter === 'pending_verification'"
+              (click)="filterOrders('pending_verification')">
+        Pending Verification
+      </button>
+      <button type="button" class="btn btn-outline-info" 
+              [class.active]="currentFilter === 'confirmed'"
+              (click)="filterOrders('confirmed')">
+        Confirmed
+      </button>
+      <button type="button" class="btn btn-outline-success" 
+              [class.active]="currentFilter === 'delivered'"
+              (click)="filterOrders('delivered')">
+        Delivered
+      </button>
+    </div>
+  </div>
+
+  <!-- Orders List -->
+  <div *ngIf="filteredOrders.length > 0; else noOrdersTpl">
+    <div class="order-card" *ngFor="let order of filteredOrders">
+      
+      <!-- Order Header with Enhanced Status -->
+      <div class="order-header d-flex justify-content-between align-items-center">
+        <div>
+          <div class="order-id">Order #{{order.orderNumber}}</div>
+          <div class="order-date">Placed on: {{order.orderDate | date:'fullDate'}}</div>
+          
+          <!-- Payment Status for Pending Verification -->
+          <div *ngIf="order.status === 9" class="payment-status mt-2">
+            <small class="text-warning">
+              <i class="fas fa-clock me-1"></i>
+              Payment Verification Pending (2-4 hours)
+            </small>
+          </div>
+        </div>
+        <div>
+          <span class="order-status" [ngClass]="getStatusClass(order.status)">
+            {{getStatusText(order.status)}}
+          </span>
+          <div *ngIf="order.status === 9" class="mt-1">
+            <button class="btn btn-sm btn-outline-warning" (click)="checkVerificationStatus(order.orderId)">
+              <i class="fas fa-sync-alt me-1"></i>Check Status
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Items -->
+      <div class="order-body">
+        <div class="product-item d-flex align-items-center" *ngFor="let item of order.items">
+          <div class="flex-shrink-0">
+            <img [src]="getProductImageUrl(item.productImageUrl)" 
+                 class="product-img" 
+                 [alt]="item.productName">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <div class="product-name">{{item.productName}}</div>
+            <div class="text-muted small">{{item.productDescription}}</div>
+            <!-- Add Nail Size Display -->
+            <div class="nail-size-display mt-1">
+  <span class="badge" [ngClass]="getSizeBadgeClass(item.nailSize)">
+    Size: {{item.nailSize || 'M'}}
+  </span>
+</div>
+          </div>
+          <div class="text-end">
+            <div class="quantity-badge">Qty: {{item.quantity}}</div>
+            <div class="product-price mt-1">₹{{item.productPrice}}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary with Action Buttons -->
+      <div class="order-summary d-flex justify-content-between align-items-center">
+        <div>
+          <span class="text-muted">Items: {{order.totalItems}}</span>
+          <span class="text-muted ms-3">Total: ₹{{order.totalAmount}}</span>
+        </div>
+        <div class="action-buttons">
+          <button class="btn btn-sm btn-outline-primary me-2" 
+                  (click)="viewOrderDetails(order.orderId)">
+            <i class="fas fa-eye me-1"></i>View Details
+          </button>
+          
+          <!-- Different actions based on status -->
+          <button *ngIf="order.status === 9" class="btn btn-sm btn-outline-warning">
+            <i class="fas fa-clock me-1"></i>Verification Pending
+          </button>
+          
+          <button *ngIf="order.status === 4" class="btn btn-sm btn-outline-info">
+            <i class="fas fa-truck me-1"></i>Track Order
+          </button>
+          
+          <button *ngIf="order.status === 5" class="btn btn-sm btn-outline-success">
+            <i class="fas fa-download me-1"></i>Download Invoice
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noOrdersTpl>
+    <div class="empty-state">
+      <i class="fas fa-shopping-bag"></i>
+      <h3>No Orders Found</h3>
+      <p *ngIf="currentFilter === 'all'">You haven't placed any orders yet.</p>
+      <p *ngIf="currentFilter !== 'all'">No orders found for the selected filter.</p>
+      <button class="btn btn-primary mt-3" (click)="continueShopping()">
+        <i class="fas fa-shopping-bag me-2"></i>Start Shopping
+      </button>
+    </div>
+  </ng-template>
+</div>
+
+<ng-template #loadingTpl>
+  <div class="text-center mt-5">
+    <div class="spinner-border text-primary" role="status"></div>
+    <p>Loading your orders...</p>
+  </div>
+</ng-template>

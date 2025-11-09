@@ -1,0 +1,10 @@
+#cartDrawer {
+  width: 700px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #cartDrawer {
+    width: 100%;
+  }
+}

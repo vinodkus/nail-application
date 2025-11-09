@@ -1,0 +1,144 @@
+<!-- Loader -->
+<div *ngIf="isLoading" class="loader-overlay">
+  <div class="loader"></div>
+</div>
+
+<!-- Error Message -->
+<div *ngIf="errorMessage" class="container mt-5">
+  <div class="alert alert-danger text-center">
+    <h4>{{ errorMessage }}</h4>
+    <button class="btn btn-primary mt-3" (click)="goBack()">
+      Back to Products
+    </button>
+  </div>
+</div>
+
+<!-- Product Details -->
+<div *ngIf="product && !isLoading" class="container mt-4">
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="#" (click)="goBack(); $event.preventDefault()" class="text-decoration-none">Products</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">{{ product.productSku }}</li>
+    </ol>
+  </nav>
+
+  <div class="row">
+    <!-- Product Images -->
+    <div class="col-md-6">
+      <!-- Main Image -->
+      <div class="main-image-container mb-3">
+        <img 
+          [src]="selectedImage" 
+          [alt]="product.productName"
+          class="img-fluid rounded main-product-image"
+        >
+      </div>
+      
+      <!-- Thumbnail Images -->
+      <div class="thumbnail-container">
+        <div class="row g-2">
+          <div 
+            class="col-3" 
+            *ngFor="let image of productImages; let i = index"
+          >
+            <img 
+              [src]="image" 
+              [alt]="'Product image ' + (i + 1)"
+              class="img-fluid rounded thumbnail-image"
+              [class.active]="image === selectedImage"
+              (click)="selectImage(image)"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Information -->
+    <div class="col-md-6">
+      <div class="product-info">
+        <h1 class="product-title">{{ product.productSku }}</h1>
+        <p class="text-muted">{{ product.productShortName }}</p>
+        
+        <!-- Price -->
+        <div class="price-section mb-3">
+          <h2 class="text-danger product-price">
+            {{ product.productPrice | currency:'INR':'symbol':'1.2-2' }}
+          </h2>
+        </div>
+
+        <!-- Nail Size Selection -->
+        <div class="size-selection mb-4">
+          <h5 class="mb-3">Select Nail Size:</h5>
+          <div class="btn-group" role="group">
+            <button 
+              *ngFor="let size of cartService.nailSizes"
+              type="button" 
+              class="btn btn-outline-primary"
+              [class.active]="selectedNailSize === size"
+              (click)="selectNailSize(size)"
+            >
+              {{ size }}
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Description -->
+        <div class="product-description mb-4">
+          <h5>Product Details</h5>
+          <p class="text-muted">
+            {{ product.productDescription || 'High-quality press on nails designed for durability and style. Perfect for any occasion.' }}
+          </p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <button 
+                class="btn btn-success w-100 py-3"
+                (click)="addToCart()"
+              >
+                <i class="bi bi-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+            <div class="col-md-6">
+              <button 
+                class="btn btn-primary w-100 py-3"
+                (click)="buyNow()"
+              >
+                <i class="bi bi-bag-check"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="additional-info mt-4">
+          <div class="row text-center">
+            <div class="col-4">
+              <div class="info-item">
+                <i class="bi bi-truck text-primary"></i>
+                <small class="d-block">Free Shipping</small>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="info-item">
+                <i class="bi bi-arrow-clockwise text-primary"></i>
+                <small class="d-block">Easy Returns</small>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="info-item">
+                <i class="bi bi-shield-check text-primary"></i>
+                <small class="d-block">Quality Guarantee</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

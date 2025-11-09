@@ -1,0 +1,388 @@
+body {
+  background-color: #f5f7fb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark-text);
+}
+
+.order-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: none;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.order-header {
+  /* background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); */
+  background: linear-gradient(135deg, #4361ee, #3a0ca3);
+
+  color: white;
+  padding: 15px 20px;
+  border-radius: 12px 12px 0 0;
+}
+
+.order-status {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-pending {
+  background-color: #ffc107;
+  color: #212529;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-processing {
+  background-color: #17a2b8;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-completed {
+  background-color: #28a745;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-cancelled {
+  background-color: #dc3545;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-shipped {
+  background-color: #007bff;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-delivered {
+  background-color: #28a745;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-returned {
+  background-color: #6c757d;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-refunded {
+  background-color: #6f42c1;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-onhold {
+  background-color: #fd7e14;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-payment-pending {
+  background-color: #ffc107;
+  color: #212529;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  border: 1px dashed #ffc107;
+}
+
+.status-payment-verified {
+  background-color: #20c997;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-payment-failed {
+  background-color: #dc3545;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+.status-pending::before {
+  content: "⏳ ";
+}
+
+.status-processing::before {
+  content: "⚙️ ";
+}
+
+.status-completed::before {
+  content: "✅ ";
+}
+
+.status-cancelled::before {
+  content: "❌ ";
+}
+
+.status-shipped::before {
+  content: "🚚 ";
+}
+
+.status-delivered::before {
+  content: "📦 ";
+}
+
+.status-returned::before {
+  content: "↩️ ";
+}
+
+.status-refunded::before {
+  content: "💸 ";
+}
+
+.status-onhold::before {
+  content: "⏸️ ";
+}
+
+.status-payment-pending::before {
+  content: "🔍 ";
+}
+
+.status-payment-verified::before {
+  content: "✓ ";
+}
+
+.status-payment-failed::before {
+  content: "❌ ";
+}
+
+/* Hover effects */
+.status-pending:hover,
+.status-processing:hover,
+.status-completed:hover,
+.status-cancelled:hover,
+.status-shipped:hover,
+.status-delivered:hover,
+.status-returned:hover,
+.status-refunded:hover,
+.status-onhold:hover,
+.status-payment-pending:hover,
+.status-payment-verified:hover,
+.status-payment-failed:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .status-pending,
+  .status-processing,
+  .status-completed,
+  .status-cancelled,
+  .status-shipped,
+  .status-delivered,
+  .status-returned,
+  .status-refunded,
+  .status-onhold,
+  .status-payment-pending,
+  .status-payment-verified,
+  .status-payment-failed {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+}
+
+/* For smaller badges in tables */
+.status-badge-sm {
+  padding: 2px 8px !important;
+  font-size: 0.7rem !important;
+}
+
+/* For larger badges in order details */
+.status-badge-lg {
+  padding: 6px 16px !important;
+  font-size: 0.9rem !important;
+}
+.product-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+}
+
+.product-item {
+  padding: 15px;
+  border-bottom: 1px solid #eaeaea;
+  transition: background-color 0.2s;
+}
+
+.product-item:hover {
+  background-color: rgba(67, 97, 238, 0.05);
+}
+
+.product-item:last-child {
+  border-bottom: none;
+}
+
+.order-summary {
+  background-color: var(--light-bg);
+  padding: 15px 20px;
+  border-radius: 0 0 12px 12px;
+}
+
+.total-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.page-title {
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
+}
+
+.empty-state i {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #dee2e6;
+}
+
+.order-date {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+}
+
+.order-id {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.product-name {
+  font-weight: 600;
+  color: var(--dark-text);
+}
+
+.product-price {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.quantity-badge {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+/* Nail Size Display Styles */
+.nail-size-display .badge {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+/* Size-specific colors */
+.size-badge-xs {
+  background-color: #6f42c1 !important;
+  color: white;
+}
+
+.size-badge-s {
+  background-color: #0dcaf0 !important;
+  color: black;
+}
+
+.size-badge-m {
+  background-color: #198754 !important;
+  color: white;
+}
+
+.size-badge-l {
+  background-color: #fd7e14 !important;
+  color: white;
+}
+
+/* Product item adjustments for new size display */
+.product-item {
+  padding: 15px;
+  border-bottom: 1px solid #eaeaea;
+  transition: background-color 0.2s;
+}
+
+.product-item:hover {
+  background-color: rgba(67, 97, 238, 0.05);
+}
+
+/* Rest of your existing CSS remains the same... */
+@media (max-width: 768px) {
+  .order-header {
+    padding: 12px 15px;
+  }
+
+  .product-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .total-price {
+    font-size: 1.1rem;
+  }
+}

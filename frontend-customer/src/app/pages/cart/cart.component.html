@@ -1,0 +1,157 @@
+<!-- Remove *ngIf="isVisible" from the main cart div -->
+<div class="p-3">
+  <h5 class="mb-3">My Cart ({{ cartItems.length }} Items)</h5>
+  
+  <!-- Nail Size Guide Button -->
+  <div class="mb-3">
+    <button class="btn btn-outline-info btn-sm" (click)="openNailSizeGuide()">
+      <i class="fas fa-ruler me-1"></i> How to Check Your Nail Size?
+    </button>
+  </div>
+
+  <div class="cart-table-wrapper">
+    <table class="table table-auto align-middle">
+      <thead class="table-light">
+        <tr>
+          <th>Item</th>
+          <th>Item Name</th>
+          <th>Nail Size</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems">
+          <td>
+            <div class="d-flex align-items-center">             
+              <img [src]="getImageUrl(item.productImageUrl)"
+                   class="img-thumbnail me-2" style="width: 60px; height: 60px;">
+              <span>{{ item.name }}</span>
+            </div>
+          </td>
+          <td>{{ item.productName }}</td>
+          <td>
+            <select class="form-select form-select-sm" 
+                    [value]="item.nailSize" 
+                    (change)="updateNailSize(item.productId, $event)">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </td>
+          <td>₹{{ item.productPrice }}</td>
+          <td>
+            <div class="input-group" style="max-width: 120px;">
+              <button class="btn btn-outline-secondary btn-sm" (click)="decrementQuantity(item)">-</button>
+              <input type="text" class="form-control text-center" [value]="item.quantity" readonly>
+              <button class="btn btn-outline-secondary btn-sm" (click)="incrementQuantity(item)">+</button>
+            </div>
+          </td>
+          <td>
+            <button class="btn btn-outline-danger btn-sm" (click)="removeItem(item.productId)">
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="d-flex justify-content-between align-items-center mt-4">
+    <h5>Total: ₹{{ getTotal().toFixed(2) }}</h5>
+    <button class="btn btn-success" (click)="proceedToCheckout()">Proceed to Checkout</button>
+  </div>
+</div>
+
+<!-- Nail Size Guide Modal - ADD THE TEMPLATE REFERENCE #nailSizeGuideModal -->
+<div class="modal fade" id="nailSizeGuideModal" tabindex="-1" aria-labelledby="nailSizeGuideModalLabel" aria-hidden="true" #nailSizeGuideModal>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nailSizeGuideModalLabel">
+          <i class="fas fa-ruler-combined me-2"></i>How to Check Your Nail Size
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="guide-step text-center">
+              <img [src]="baseUrl + '/assets/images/nail-measure-1.jpg'" 
+                   class="img-fluid rounded mb-3" 
+                   alt="Nail Measurement Step 1"
+                   style="max-height: 300px; object-fit: cover;">
+              <h6>Step 1: Measure Your Natural Nail</h6>
+              <p class="text-muted small">
+                Use a ruler to measure the width of your natural nail at its widest point in millimeters.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="guide-step text-center">
+              <img [src]="baseUrl + '/assets/images/nail-measure-2.jpg'" 
+                   class="img-fluid rounded mb-3" 
+                   alt="Nail Measurement Step 2"
+                   style="max-height: 300px; object-fit: cover;">
+              <h6>Step 2: Compare with Size Chart</h6>
+              <p class="text-muted small">
+                Compare your measurement with our size chart to find your perfect fit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Size Chart -->
+        <div class="size-chart mt-4">
+          <h6 class="text-center mb-3">Nail Size Chart</h6>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-light">
+                <tr>
+                  <th>Size</th>
+                  <th>Width Range</th>
+                  <th>Recommended For</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="badge bg-primary">XS</span></td>
+                  <td>10 - 12 mm</td>
+                  <td>Small hands, pinky & ring fingers</td>
+                </tr>
+                <tr>
+                  <td><span class="badge bg-success">S</span></td>
+                  <td>13 - 15 mm</td>
+                  <td>Average hands, middle & index fingers</td>
+                </tr>
+                <tr>
+                  <td><span class="badge bg-warning text-dark">M</span></td>
+                  <td>16 - 18 mm</td>
+                  <td>Most common size, fits majority</td>
+                </tr>
+                <tr>
+                  <td><span class="badge bg-danger">L</span></td>
+                  <td>19 - 21 mm</td>
+                  <td>Larger hands, thumb & wide nails</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="alert alert-info mt-3">
+          <strong>Tip:</strong> If you're unsure, choose Medium (M) size as it fits most people. 
+          You can also order multiple sizes for different fingers.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+          Got it! Let me choose my size
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

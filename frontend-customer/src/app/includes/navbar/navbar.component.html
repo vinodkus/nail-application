@@ -1,0 +1,136 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Glamorous Looks</a>
+    <!-- ✅ Toggle Button for Mobile -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/gallery">Gallery</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/pricing">Pricing</a>
+        </li>
+         
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/contact">Contact</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="categoriesDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+            <li><a class="dropdown-item" href="#">Men</a></li>
+            <li><a class="dropdown-item" href="#">Women</a></li>
+            <li><a class="dropdown-item" href="#">Kids</a></li>
+          </ul>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/products">Press On Nails</a>
+        </li> -->
+      </ul>
+
+      <!-- Search Bar -->
+      <!-- <form class="d-flex me-3" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search products..."
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+
+      <!-- Right Side -->
+      <ul class="navbar-nav ms-auto">
+        
+        <li>
+          <!-- navbar.component.html -->
+          <button
+            class="btn btn-outline-dark"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartDrawer"
+          >
+            <i class="bi bi-cart"></i> ({{ cartCount }})
+          </button>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="profileDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            (click)="$event.preventDefault()"
+          >
+            <i class="bi bi-person-circle" style="font-size: 1.5rem"></i>
+          </a>
+
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="profileDropdown"
+          >
+            <!-- ✅ If user is logged in -->
+            <ng-container *ngIf="isLoggedIn; else guestOptions">
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Welcome, {{ customerName }}</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="#">My Profile</a></li>
+              <!-- <li><a class="dropdown-item" href="#" (click)="myOrders()" >Orders</a></li> -->
+               <li><a class="dropdown-item" (click)="myOrders()">Orders</a></li>
+
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#" (click)="logout()">Logout</a>
+              </li>
+            </ng-container>
+
+            <!-- ❌ If user is not logged in -->
+            <ng-template #guestOptions>
+              <li>
+                <button mat-button type="button" (click)="openLoginDialog()">
+                  Login
+                </button>
+              </li>
+              <li>
+                <button mat-button type="button" (click)="openRegisterDialog()">
+                  Register
+                </button>
+              </li>
+            </ng-template>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,145 @@
+<div class="card shadow-sm border-0 mt-4">
+  <div class="card-header bg-primary text-white">
+    <h4 class="mb-0">🛒 Add New Product</h4>
+  </div>
+
+  <div class="card-body">
+    <form
+      [formGroup]="productForm"
+      (ngSubmit)="onSubmit(fileInput)"
+      enctype="multipart/form-data"
+      novalidate
+    >
+      <div class="row g-3">
+        <!-- Product Name -->
+        <div class="col-md-6">
+          <label class="form-label">Product Name</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="productName"
+            placeholder="Enter Product Name"
+          />
+        </div>
+        <div class="col-md-6" *ngIf="isEditMode">
+          <label class="form-label">Product SKU</label>
+          <input
+            type="text"
+            readonly
+            class="form-control"
+            formControlName="productSku"
+            placeholder="Product SKU"
+          />
+        </div>
+        <!-- Product Price -->
+        <div class="col-md-6">
+          <label class="form-label">Product Price</label>
+          <input
+            type="number"
+            class="form-control"
+            formControlName="productPrice"
+            placeholder="0.00"
+          />
+        </div>
+
+        <!-- Product Short Name -->
+        <div class="col-md-6">
+          <label class="form-label">Product Short Name</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="productShortName"
+            placeholder="Short Name"
+          />
+        </div>
+
+        <!-- Product Description -->
+        <div class="col-12">
+          <label class="form-label">Product Description</label>
+          <textarea
+            rows="3"
+            class="form-control"
+            formControlName="productDescription"
+            placeholder="Enter Description"
+          ></textarea>
+        </div>
+
+        <!-- Delivery Time -->
+        <div class="col-md-6">
+          <label class="form-label">Delivery Time Span</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="deliveryTimeSpan"
+            placeholder="e.g. 3-5 days"
+          />
+        </div>
+
+        <!-- Category -->
+        <div class="col-md-6">
+          <label class="form-label">Category</label>
+          <select class="form-select" formControlName="categoryId">
+            <option value="">-- Select Category --</option>
+            <option *ngFor="let cat of categoryList" [value]="cat.categoryId">
+              {{ cat.categoryName }}
+            </option>
+          </select>
+        </div>
+
+        <!-- Product Image -->
+        <div class="col-md-6">
+          <label class="form-label">Product Image</label>
+          <input
+            #fileInput
+            type="file"
+            class="form-control"
+            (change)="onFileSelected($event)"
+            accept="image/*"
+          />
+        </div>
+
+        <!-- Image Preview -->
+        <div class="col-md-6">
+          <label class="form-label">Image Preview</label>
+          <div class="border p-2">
+            <img
+              *ngIf="imagePreview"
+              [src]="imagePreview"
+              alt="Image Preview"
+              class="img-fluid"
+              style="max-height: 200px; max-width: 100%; object-fit: cover;"
+            />
+            <p *ngIf="!imagePreview" class="text-muted">No image selected</p> </div>
+        </div>  
+        <!-- Error Message -->
+
+        <!-- Is Active -->
+        <div class="col-md-6">
+          <label class="form-label">Active</label>
+          <input
+            type="checkbox"
+            class="form-check-input"
+            formControlName="isActive"
+            [checked]="true"
+          />
+        </div>
+        <!-- Submit Button -->
+        <div class="col-12 text-end mt-3">
+          <button
+            mat-raised-button
+            type="submit"
+            class="btn btn-success"
+            [disabled]="productForm.invalid"
+          >
+            <!-- <i class="bi bi-plus-circle"></i> Add Product -->
+            <i
+              class="bi"
+              [ngClass]="isEditMode ? 'bi-pencil-square' : 'bi-plus-circle'"
+            ></i>
+            {{ isEditMode ? "Update Product" : "Add Product" }}
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+
+.card img {
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.snackbar-success {
+  background-color: #af4c5c; /* Green */
+  color: white;
+  font-weight: bold;
+}
+.cdk-overlay-container {
+  z-index: 1080 !important;
+}
+
