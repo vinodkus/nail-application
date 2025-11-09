@@ -1,0 +1,822 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtoresponse\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtoresponse\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\createproductimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\createproductimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\productimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\productimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\implementation\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\implementation\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\orderitemdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\orderitemdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\implementation\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\implementation\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\customerorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\customerorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\implementation\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\implementation\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\interface\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\interface\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\interface\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\interface\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\forgotpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\forgotpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\migrations\\20251031091241_addpasswordresettocustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\migrations\\20251031091241_addpasswordresettocustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\interface\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\interface\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtoresponse\\forgotpasswordresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtoresponse\\forgotpasswordresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\implementation\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\implementation\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\orderdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\orderdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\orderitemconfirmationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\orderitemconfirmationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\orderconfirmationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\orderconfirmationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtoresponse\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtoresponse\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\dtos\\updateorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\dtos\\updateorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\migrations\\20250623141522_addproductactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\migrations\\20250623141522_addproductactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\migrations\\20250726082653_addcustomeridfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\migrations\\20250726082653_addcustomeridfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\migrations\\20250726151446_addstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\migrations\\20250726151446_addstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\nailapi\\nailapi\\migrations\\20251031092234_addpasswordresettocustomer1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|NailApi\\NailApi.csproj|solutionrelative:nailapi\\migrations\\20251031092234_addpasswordresettocustomer1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "NailApi\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "NailApi\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAgwA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T10:24:53.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductImageDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\ProductImageDto.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\ProductImageDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\ProductImageDto.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\ProductImageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T15:51:10.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\ProductImage.cs",
+              "RelativeDocumentMoniker": "NailApi\\Models\\ProductImage.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\ProductImage.cs",
+              "RelativeToolTip": "NailApi\\Models\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T15:40:56.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Implementation\\CustomerService.cs",
+              "RelativeDocumentMoniker": "NailApi\\Implementation\\CustomerService.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Implementation\\CustomerService.cs",
+              "RelativeToolTip": "NailApi\\Implementation\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:27:54.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Implementation\\EmailService.cs",
+              "RelativeDocumentMoniker": "NailApi\\Implementation\\EmailService.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Implementation\\EmailService.cs",
+              "RelativeToolTip": "NailApi\\Implementation\\EmailService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T10:56:25.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "NailApi\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "NailApi\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T05:41:27.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductResponseDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\DtoResponse\\ProductResponseDto.cs",
+              "RelativeDocumentMoniker": "NailApi\\DtoResponse\\ProductResponseDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\DtoResponse\\ProductResponseDto.cs",
+              "RelativeToolTip": "NailApi\\DtoResponse\\ProductResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T14:52:03.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateProductImageDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\CreateProductImageDto.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\CreateProductImageDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\CreateProductImageDto.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\CreateProductImageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T15:51:30.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Program.cs",
+              "RelativeDocumentMoniker": "NailApi\\Program.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Program.cs",
+              "RelativeToolTip": "NailApi\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T13:57:48.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "NailApi\\appsettings.Production.json",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\appsettings.Production.json",
+              "RelativeToolTip": "NailApi\\appsettings.Production.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-15T07:57:05.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "NailApi\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "NailApi\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAASwFkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T04:25:57.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\ProductDto.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\ProductDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\ProductDto.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T14:17:45.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "NailApi\\Models\\Product.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\Product.cs",
+              "RelativeToolTip": "NailApi\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T04:22:46.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderItemDetailDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\OrderItemDetailDto.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\OrderItemDetailDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\OrderItemDetailDto.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\OrderItemDetailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T09:52:49.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "NailApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\appsettings.Development.json",
+              "RelativeToolTip": "NailApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-15T07:53:16.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomerOrderDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\CustomerOrderDto.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\CustomerOrderDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\CustomerOrderDto.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\CustomerOrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:51:01.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Implementation\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "NailApi\\Implementation\\CustomerRepository.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Implementation\\CustomerRepository.cs",
+              "RelativeToolTip": "NailApi\\Implementation\\CustomerRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAADgvzoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:38:05.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "NailApi\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\OrderItem.cs",
+              "RelativeToolTip": "NailApi\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T12:35:19.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "NailApi\\Models\\Order.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\Order.cs",
+              "RelativeToolTip": "NailApi\\Models\\Order.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T08:13:29.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "NailApi\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "NailApi\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAvwFIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T09:43:53.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "NailApi\\Models\\Payment.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\Payment.cs",
+              "RelativeToolTip": "NailApi\\Models\\Payment.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAnwBEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T08:08:53.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\web.config",
+              "RelativeDocumentMoniker": "NailApi\\web.config",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\web.config",
+              "RelativeToolTip": "NailApi\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-05T14:55:47.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\appsettings.json",
+              "RelativeDocumentMoniker": "NailApi\\appsettings.json",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\appsettings.json",
+              "RelativeToolTip": "NailApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-10T04:15:04.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Interface\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "NailApi\\Interface\\ICustomerService.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Interface\\ICustomerService.cs",
+              "RelativeToolTip": "NailApi\\Interface\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T07:39:23.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20251031091241_AddPasswordResetToCustomer.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Migrations\\20251031091241_AddPasswordResetToCustomer.cs",
+              "RelativeDocumentMoniker": "NailApi\\Migrations\\20251031091241_AddPasswordResetToCustomer.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Migrations\\20251031091241_AddPasswordResetToCustomer.cs",
+              "RelativeToolTip": "NailApi\\Migrations\\20251031091241_AddPasswordResetToCustomer.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwF0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T09:12:43.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Interface\\IEmailService.cs",
+              "RelativeDocumentMoniker": "NailApi\\Interface\\IEmailService.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Interface\\IEmailService.cs",
+              "RelativeToolTip": "NailApi\\Interface\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T10:55:57.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ResetPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\ResetPasswordRequest.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\ResetPasswordRequest.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\ResetPasswordRequest.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\ResetPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T11:14:13.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ForgotPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\ForgotPasswordRequest.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\ForgotPasswordRequest.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\ForgotPasswordRequest.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\ForgotPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T07:37:29.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20251031092234_AddPasswordResetToCustomer1.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Migrations\\20251031092234_AddPasswordResetToCustomer1.cs",
+              "RelativeDocumentMoniker": "NailApi\\Migrations\\20251031092234_AddPasswordResetToCustomer1.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Migrations\\20251031092234_AddPasswordResetToCustomer1.cs",
+              "RelativeToolTip": "NailApi\\Migrations\\20251031092234_AddPasswordResetToCustomer1.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T09:22:35.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "NailApi\\Models\\Customer.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\Customer.cs",
+              "RelativeToolTip": "NailApi\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:48:51.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ForgotPasswordResponse.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\DtoResponse\\ForgotPasswordResponse.cs",
+              "RelativeDocumentMoniker": "NailApi\\DtoResponse\\ForgotPasswordResponse.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\DtoResponse\\ForgotPasswordResponse.cs",
+              "RelativeToolTip": "NailApi\\DtoResponse\\ForgotPasswordResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T07:37:57.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "OrderDetailDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\OrderDetailDto.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\OrderDetailDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\OrderDetailDto.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\OrderDetailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T09:52:38.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Implementation\\PaymentService.cs",
+              "RelativeDocumentMoniker": "NailApi\\Implementation\\PaymentService.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Implementation\\PaymentService.cs",
+              "RelativeToolTip": "NailApi\\Implementation\\PaymentService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswFIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T07:53:39.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Interface\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "NailApi\\Interface\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Interface\\ICustomerRepository.cs",
+              "RelativeToolTip": "NailApi\\Interface\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:38:02.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Interface\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "NailApi\\Interface\\IPaymentService.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Interface\\IPaymentService.cs",
+              "RelativeToolTip": "NailApi\\Interface\\IPaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T07:47:47.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "NailApi\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "NailApi\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:20:31.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "NailApi\\Models\\Category.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Models\\Category.cs",
+              "RelativeToolTip": "NailApi\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T14:50:56.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "OrderItemConfirmationDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\OrderItemConfirmationDto.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\OrderItemConfirmationDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\OrderItemConfirmationDto.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\OrderItemConfirmationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T14:43:26.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "OrderConfirmationDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\OrderConfirmationDto.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\OrderConfirmationDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\OrderConfirmationDto.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\OrderConfirmationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T14:43:09.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "OrderResponse.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\DtoResponse\\OrderResponse.cs",
+              "RelativeDocumentMoniker": "NailApi\\DtoResponse\\OrderResponse.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\DtoResponse\\OrderResponse.cs",
+              "RelativeToolTip": "NailApi\\DtoResponse\\OrderResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T12:56:34.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UpdateOrderStatusDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\UpdateOrderStatusDto.cs",
+              "RelativeDocumentMoniker": "NailApi\\Dtos\\UpdateOrderStatusDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Dtos\\UpdateOrderStatusDto.cs",
+              "RelativeToolTip": "NailApi\\Dtos\\UpdateOrderStatusDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T08:22:54.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "NailApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "NailApi\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T04:54:11.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MasterController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\MasterController.cs",
+              "RelativeDocumentMoniker": "NailApi\\Controllers\\MasterController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\MasterController.cs",
+              "RelativeToolTip": "NailApi\\Controllers\\MasterController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T10:30:35.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20250623141522_addProductactive.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Migrations\\20250623141522_addProductactive.cs",
+              "RelativeDocumentMoniker": "NailApi\\Migrations\\20250623141522_addProductactive.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Migrations\\20250623141522_addProductactive.cs",
+              "RelativeToolTip": "NailApi\\Migrations\\20250623141522_addProductactive.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T14:15:23.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "NailApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "NailApi\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-21T12:00:34.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "NailApi\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "NailApi\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:37:08.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20250726082653_AddCustomerIdField.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Migrations\\20250726082653_AddCustomerIdField.cs",
+              "RelativeDocumentMoniker": "NailApi\\Migrations\\20250726082653_AddCustomerIdField.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Migrations\\20250726082653_AddCustomerIdField.cs",
+              "RelativeToolTip": "NailApi\\Migrations\\20250726082653_AddCustomerIdField.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T08:26:55.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20250726151446_AddStatus.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Migrations\\20250726151446_AddStatus.cs",
+              "RelativeDocumentMoniker": "NailApi\\Migrations\\20250726151446_AddStatus.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Migrations\\20250726151446_AddStatus.cs",
+              "RelativeToolTip": "NailApi\\Migrations\\20250726151446_AddStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:14:46.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "NailApi\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "NailApi\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T08:19:22.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "NailApi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "NailApi\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T05:39:23.199Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

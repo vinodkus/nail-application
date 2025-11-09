@@ -1,0 +1,566 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\districtmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\districtmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\citymaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\citymaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\statemaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\statemaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\implementation\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\implementation\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\employeeapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\employeeapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\placeorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\placeorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\dtos\\customerlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\dtos\\customerlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\dtoresponse\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\dtoresponse\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\dtos\\customerregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\dtos\\customerregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\dtoresponse\\categoryresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\dtoresponse\\categoryresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\dtoresponse\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\dtoresponse\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|c:\\vinod\\vs test project\\v-19\\test\\employeeapi\\employeeapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2863BB95-AB35-4997-98F5-8C2077529755}|EmployeeApi\\EmployeeApi.csproj|solutionrelative:employeeapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EmployeeApi\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAIA8wBoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T10:45:27.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CityMaster.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\CityMaster.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\CityMaster.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\CityMaster.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\CityMaster.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T16:17:54.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EmployeeApi\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T06:30:06.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\appsettings.json",
+              "RelativeDocumentMoniker": "EmployeeApi\\appsettings.json",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\appsettings.json",
+              "RelativeToolTip": "EmployeeApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-01T10:47:01.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Program.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Program.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Program.cs",
+              "RelativeToolTip": "EmployeeApi\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T07:34:58.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "EmployeeApi\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:40:25.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Services\\AuthService.cs",
+              "RelativeToolTip": "EmployeeApi\\Services\\AuthService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:22:49.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DistrictMaster.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\DistrictMaster.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\DistrictMaster.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\DistrictMaster.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\DistrictMaster.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T16:17:39.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StateMaster.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\StateMaster.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\StateMaster.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\StateMaster.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\StateMaster.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T16:18:12.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\Order.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\Order.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T11:01:54.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\OrderItem.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T11:02:14.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\Customer.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\Customer.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:11:22.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\Category.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\Category.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T12:37:17.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Implementation\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Implementation\\CustomerRepository.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Implementation\\CustomerRepository.cs",
+              "RelativeToolTip": "EmployeeApi\\Implementation\\CustomerRepository.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAASwBYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:14:07.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "EmployeeApi\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:25:07.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "EmployeeApi\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwBQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T10:51:32.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmployeeApi.csproj",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\EmployeeApi.csproj",
+              "RelativeDocumentMoniker": "EmployeeApi\\EmployeeApi.csproj",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\EmployeeApi.csproj",
+              "RelativeToolTip": "EmployeeApi\\EmployeeApi.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-04T15:12:04.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\OrderItemDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\OrderItemDto.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\OrderItemDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T10:52:01.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PlaceOrderDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\PlaceOrderDto.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\PlaceOrderDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\PlaceOrderDto.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\PlaceOrderDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T10:52:12.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "EmployeeApi\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAcwJwAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T13:24:17.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "EmployeeApi\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T13:45:10.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\Product.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\Product.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:30:21.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CustomerLoginDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Dtos\\CustomerLoginDto.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Dtos\\CustomerLoginDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Dtos\\CustomerLoginDto.cs",
+              "RelativeToolTip": "EmployeeApi\\Dtos\\CustomerLoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T13:19:20.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MasterController.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\MasterController.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Controllers\\MasterController.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Controllers\\MasterController.cs",
+              "RelativeToolTip": "EmployeeApi\\Controllers\\MasterController.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAASwBUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T17:13:24.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductResponseDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\DtoResponse\\ProductResponseDto.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\DtoResponse\\ProductResponseDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\DtoResponse\\ProductResponseDto.cs",
+              "RelativeToolTip": "EmployeeApi\\DtoResponse\\ProductResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T14:41:33.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Dtos\\ProductDto.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Dtos\\ProductDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Dtos\\ProductDto.cs",
+              "RelativeToolTip": "EmployeeApi\\Dtos\\ProductDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T13:31:08.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EmployeeDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Dtos\\EmployeeDto.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Dtos\\EmployeeDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Dtos\\EmployeeDto.cs",
+              "RelativeToolTip": "EmployeeApi\\Dtos\\EmployeeDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T06:30:07.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CustomerRegisterDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Dtos\\CustomerRegisterDto.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Dtos\\CustomerRegisterDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Dtos\\CustomerRegisterDto.cs",
+              "RelativeToolTip": "EmployeeApi\\Dtos\\CustomerRegisterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:06:42.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Interface\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Interface\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Interface\\ICustomerRepository.cs",
+              "RelativeToolTip": "EmployeeApi\\Interface\\ICustomerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:13:15.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CategoryResponseDto.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\DtoResponse\\CategoryResponseDto.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\DtoResponse\\CategoryResponseDto.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\DtoResponse\\CategoryResponseDto.cs",
+              "RelativeToolTip": "EmployeeApi\\DtoResponse\\CategoryResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T09:14:15.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\Employee.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\Employee.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\Employee.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T10:01:23.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\DtoResponse\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\DtoResponse\\ApiResponse.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\DtoResponse\\ApiResponse.cs",
+              "RelativeToolTip": "EmployeeApi\\DtoResponse\\ApiResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T15:50:21.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "EmployeeApi\\Models\\User.cs",
+              "ToolTip": "C:\\Vinod\\VS Test Project\\V-19\\Test\\EmployeeApi\\EmployeeApi\\Models\\User.cs",
+              "RelativeToolTip": "EmployeeApi\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:36:10.59Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
