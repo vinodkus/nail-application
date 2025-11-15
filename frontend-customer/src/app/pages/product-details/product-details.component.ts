@@ -6,112 +6,136 @@ import { Product } from '../../models/product';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { environment } from '../../../environments/environment';
 import { CommonModule } from '@angular/common';
+import { MatModule } from '../../appModules/mat.module';
 
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatModule],
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-  product: Product | null = null;
-  productImages: string[] = [];
-  selectedImage: string = '';
-  selectedNailSize: string = 'M';
-  isLoading: boolean = false;
-  errorMessage: string = '';
+  public baseUrl = environment.apiBaseUrl;
 
-  // Mock multiple images for demonstration
-  // Replace with actual API call for product images
-  mockAdditionalImages: string[] = [
-    'product-image-2.jpg',
-    'product-image-3.jpg',
-    'product-image-4.jpg'
-  ];
+  product: Product | null = null;
+  selectedImage: string = '';
+  quantity: number = 1;
+  isLoading: boolean = true;
+  error: string = '';
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private productService: ProductService,
-    public cartService: CartService,
-    private snackBar: MatSnackBar
+    private cartService: CartService
   ) {}
 
   ngOnInit(): void {
-    this.loadProductDetails();
-  }
-
-  loadProductDetails(): void {
-    const productId = Number(this.route.snapshot.paramMap.get('id'));
-    
-    if (!productId) {
-      this.errorMessage = 'Invalid product ID';
-      return;
-    }
-
-    this.isLoading = true;
-    
-    this.productService.getProductById(productId).subscribe({
-      next: (res: any) => {
-        if (res.result && res.data) {
-          this.product = res.data;
-          this.selectedImage = this.getImageUrl(this.product?.productImageUrl);
-          
-          // Create mock image gallery (replace with actual API call)
-          this.productImages = [
-            this.selectedImage,
-            ...this.mockAdditionalImages.map(img => this.getImageUrl(img))
-          ];
-        } else {
-          this.errorMessage = 'Product not found';
-        }
-        this.isLoading = false;
-      },
-      error: (err: any) => {
-        console.error('Error loading product:', err);
-        this.errorMessage = 'Failed to load product details';
-        this.isLoading = false;
+    this.route.params.subscribe(params => {
+      const productId = params['id'];
+      if (productId) {
+        this.loadProductDetails(productId);
       }
     });
   }
 
-  selectImage(imageUrl: string): void {
-    this.selectedImage = imageUrl;
+  loadProductDetails(productId: number): void {
+    this.isLoading = true;
+    debugger;
+    this.productService.getProductById(productId).subscribe({
+      next: (product) => {
+        this.product = product;
+        // Set the first image as selected (main image or first additional image)
+        if (product.additionalImages && product.additionalImages.length > 0) {
+          this.selectedImage = this.getFullImageUrl(product.additionalImages[0].imageUrl);
+        } else if (product.productImageUrl) {
+          this.selectedImage = this.getFullImageUrl(product.productImageUrl);
+        }
+        this.isLoading = false;
+      },
+      error: (error) => {
+        this.error = 'Failed to load product details';
+        this.isLoading = false;
+        console.error('Error loading product:', error);
+      }
+    });
+  }
+handleImageError(event: any): void {
+  event.target.src = '/assets/images/placeholder.jpg';
+}
+  getFullImageUrl(relativeUrl: string): string {
+    if (!relativeUrl) return '';
+    
+    // If it's already a full URL, return as is
+    if (relativeUrl.startsWith('http')) {
+      return relativeUrl;
+    }
+    
+    // Adjust based on your API URL structure
+  //  const baseUrl = 'https://localhost:7161'; // Your API base URL
+    if (relativeUrl.startsWith('/')) {
+      return `${this.baseUrl}${relativeUrl}`;
+    }
+    
+    return `${this.baseUrl}/products/${relativeUrl}`;
   }
 
-  selectNailSize(size: string): void {
-    this.selectedNailSize = size;
+  selectImage(imageUrl: string): void {
+    this.selectedImage = this.getFullImageUrl(imageUrl);
+  }
+
+  increaseQuantity(): void {
+    this.quantity++;
+  }
+
+  decreaseQuantity(): void {
+    if (this.quantity > 1) {
+      this.quantity--;
+    }
   }
 
   addToCart(): void {
     if (!this.product) return;
+debugger;
+    const cartItem = {
+      productId: this.product.productId,
+      productName: this.product.productName,
+      productPrice: this.product.productPrice,
+      quantity: this.quantity,
+      // productImage: this.selectedImage,
+      productImageUrl:this.product.productImageUrl,   
+      productSku: this.product.productSku
+    };
 
-    this.cartService.addToCart(this.product, this.selectedNailSize);
+    this.cartService.addToCart(cartItem);
     
-    this.snackBar.open('Product added to cart!', 'Close', {
-      duration: 3000,
-      horizontalPosition: 'right',
-      verticalPosition: 'top',
-      panelClass: ['snackbar-success']
-    });
+    // Show success message (you can use a toast service here)
+    alert(`${this.product.productName} added to cart!`);
   }
 
   buyNow(): void {
-    if (!this.product) return;
-
-    this.cartService.addToCart(this.product, this.selectedNailSize);
+    this.addToCart();
     this.router.navigate(['/cart']);
   }
 
-  getImageUrl(imageFileName?: string): string {
-    if (!imageFileName) {
-      return 'assets/default-image.png';
+  get allImages(): string[] {
+    if (!this.product) return [];
+    
+    const images: string[] = [];
+    
+    // Add main product image
+    if (this.product.productImageUrl) {
+      images.push(this.getFullImageUrl(this.product.productImageUrl));
     }
-    return `${environment.apiBaseUrl}/products/${imageFileName}`;
-  }
-
-  goBack(): void {
-    this.router.navigate(['/products']);
+    
+    // Add additional images
+    if (this.product.additionalImages) {
+      this.product.additionalImages.forEach(img => {
+        images.push(this.getFullImageUrl(img.imageUrl));
+      });
+    }
+    
+    return images;
   }
 }

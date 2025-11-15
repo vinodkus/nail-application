@@ -29,6 +29,7 @@ export class CartService {
   }
 
   private saveCartToStorage(items: CartItem[]) {
+    debugger
     localStorage.setItem('cartItems', JSON.stringify(items));
   }
   private clearCartStorage() {
@@ -36,6 +37,7 @@ export class CartService {
   }
 
  addToCart(item: any, nailSize: string = 'M') {
+  debugger;
     const currentItems = this.items.value;
     const existingItem = currentItems.find(
       (p) => p.productId === item.productId && p.nailSize === nailSize

@@ -28,12 +28,14 @@ export class ProductService {
       `${this.baseUrl}/api/Products/GetCustomerProductsByCatId/?catId=${categoryId}`
     );
   }
- getProductById(productId: number): Observable<ApiResponse<Product>> {
-  return this.http.get<ApiResponse<Product>>(
-    `${this.baseUrl}/api/Products/${productId}`
-  );
-}
-
+//  getProductById(productId: number): Observable<ApiResponse<Product>> {
+//   return this.http.get<ApiResponse<Product>>(
+//     `${this.baseUrl}/api/Products/${productId}`
+//   );
+// }
+ getProductById(id: number): Observable<Product> {
+    return this.http.get<Product>(`${this.baseUrl}/api/Products/${id}`);
+  }
 getProductImages(productId: number): Observable<ApiResponse<ProductImage[]>> {
   return this.http.get<ApiResponse<ProductImage[]>>(
     `${this.baseUrl}/api/Products/GetProductImages/${productId}`
