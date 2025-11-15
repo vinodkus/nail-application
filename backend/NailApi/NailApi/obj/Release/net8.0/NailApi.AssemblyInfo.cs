@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NailApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+264d649d96e6cb468eadee9b90771930928aca88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ced721e1f9e9811a80fa6ab1f4aa18676ec8b4c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("NailApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NailApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

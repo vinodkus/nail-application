@@ -116,7 +116,8 @@ debugger;
 
   buyNow(): void {
     this.addToCart();
-    this.router.navigate(['/cart']);
+    // this.router.navigate(['/cart']);
+    this.router.navigate(['/products']);
   }
 
   get allImages(): string[] {

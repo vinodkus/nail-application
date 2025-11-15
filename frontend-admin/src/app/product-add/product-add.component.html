@@ -133,20 +133,29 @@
             <h6 class="text-muted mb-2">
               Current Images ({{ existingImages.length }})
             </h6>
-            <div class="d-flex flex-wrap gap-2">
+            <div class="current-images-container">
               <div
                 *ngFor="let img of existingImages; let i = index"
-                class="image-thumbnail position-relative"
+                class="image-preview-item"
               >
-                <img
-                  [src]="img.imageUrl"
-                  [alt]="'Product image ' + (i + 1)"
-                  class="img-thumbnail"
-                />
-                <span
-                  class="badge bg-secondary position-absolute top-0 start-0"
-                  >{{ i + 1 }}</span
-                >
+                <div class="image-wrapper">
+                  <img
+                    [src]="img.imageUrl"
+                    [alt]="'Product image ' + (i + 1)"
+                    class="img-thumbnail"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-danger btn-sm remove-image-btn"
+                    (click)="removeImage(img.productImageId)"
+                    title="Remove Image"
+                  >
+                    <i class="bi bi-x"></i>
+                  </button>
+                  <span class="badge bg-secondary position-absolute top-0 start-0">
+                    {{ i + 1 }}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -170,7 +179,6 @@
             class="btn btn-success"
             [disabled]="productForm.invalid"
           >
-            <!-- <i class="bi bi-plus-circle"></i> Add Product -->
             <i
               class="bi"
               [ngClass]="isEditMode ? 'bi-pencil-square' : 'bi-plus-circle'"
@@ -182,6 +190,7 @@
     </form>
   </div>
 </div>
+
 <!-- Image Upload Modal -->
 <div
   class="modal fade"

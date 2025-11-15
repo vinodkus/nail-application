@@ -111,4 +111,7 @@ export class ProductAdminService {
       { headers }
     );
   }
+  removeProductImage(imageId: number): Observable<any> {
+  return this.http.delete(`${this.baseUrl}/api/Products/DeleteProductImage/${imageId}`);
+}
 }

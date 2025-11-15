@@ -88,6 +88,32 @@ export class ProductAddComponent implements OnInit {
       },
     });
   }
+  isRemovingImage: boolean = false;
+  removeImage(imageId: number) {
+    debugger;
+  if (confirm('Are you sure you want to remove this image?')) {
+     this.isRemovingImage = true;
+    this.pas.removeProductImage(imageId).subscribe({
+      next: (response) => {
+        // Remove image from local array
+        this.existingImages = this.existingImages.filter(img => img.id !== imageId);
+        
+        // Show success message
+        alert('Image removed successfully');
+          // Refresh product details to ensure data consistency
+        if (this.currentProductId) {
+          this.loadProductDetails(this.currentProductId);
+        }
+        
+        this.isRemovingImage = false;
+      },
+      error: (error) => {
+        console.error('Error removing image:', error);
+        alert('Failed to remove image');
+      }
+    });
+  }
+}
   onFileSelected(event: any) {
     this.selectedFile = event.target.files[0];
     if (this.selectedFile) {
@@ -122,7 +148,7 @@ export class ProductAddComponent implements OnInit {
 
         // Load existing product images for the modal
         if (product.additionalImages) {
-         // this.existingImages = product.additionalImages;
+         debugger;
            this.existingImages = product.additionalImages.map(img => ({
           ...img,
            imageUrl: this.getFullImageUrl(img.imageUrl)

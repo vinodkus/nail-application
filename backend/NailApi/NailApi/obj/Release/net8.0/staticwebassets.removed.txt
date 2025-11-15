@@ -1,1 +1,2 @@
-C:\Vinod\VS Test Project\V-19\NailApplication\backend\NailApi\NailApi\wwwroot\products\f48f4538-e3f5-4042-8a98-4dc478975fa7.jpg
+C:\Vinod\VS Test Project\V-19\NailApplication\backend\NailApi\NailApi\wwwroot\products\195d3918-554d-4d86-88ee-7d798548b721.jpg
+C:\Vinod\VS Test Project\V-19\NailApplication\backend\NailApi\NailApi\wwwroot\products\1dd61e27-eab7-431c-87b8-cab67a00729f.jpg
