@@ -1,3 +1,5 @@
+import { ProductImage } from "./ProductImage";
+
 export interface Product {
   id?: number;
   productId:number;
@@ -12,4 +14,5 @@ export interface Product {
     image?: File; 
     productImageUrl:string;
     isActive: boolean;
+    additionalImages?: ProductImage[]; // Add this property
 }

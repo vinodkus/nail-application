@@ -103,7 +103,7 @@ namespace NailApi.Controllers
             }
         }
 
-        [HttpPost("AddProductImage")]
+        [HttpPost("ProductImages")]
         public async Task<IActionResult> AddProductImage([FromForm] CreateProductImageDto dto)
         {
             try
@@ -223,33 +223,49 @@ namespace NailApi.Controllers
                     DeliveryTimeSpan = p.DeliveryTimeSpan,
                     CategoryId = p.CategoryId,
                     ProductImageUrl = p.ProductImageUrl,
-                    IsActive = p.IsActive
+                    IsActive = p.IsActive,
+                    AdditionalImages = new List<ProductImageDto>() // Initialize empty list
+                    // AdditionalImages remains null initially
                 }).FirstOrDefaultAsync();
 
                 if (product == null)
                     return NotFound($"Product with ID {id} not found.");
-                // Get additional images
-                var additionalImages = await _context.ProductImages
-                    .Where(pi => pi.ProductId == id && pi.IsActive)
-                    .OrderBy(pi => pi.SortOrder)
-                    .Select(pi => new ProductImageDto
-                    {
-                        ProductImageId = pi.ProductImageId,
-                        ProductId = pi.ProductId,
-                        ImageUrl = pi.ImageUrl,
-                        SortOrder = pi.SortOrder,
-                        IsActive = pi.IsActive
-                    })
-                    .ToListAsync();
 
-                product.AdditionalImages = additionalImages;
+                try
+                {
+                    // Safely get additional images
+                    var additionalImages = await _context.ProductImages
+                        .Where(pi => pi.ProductId == id && pi.IsActive)
+                        .OrderBy(pi => pi.SortOrder)
+                        .Select(pi => new ProductImageDto
+                        {
+                            ProductImageId = pi.ProductImageId,
+                            ProductId = pi.ProductId,
+                            ImageUrl = pi.ImageUrl,
+                            SortOrder = pi.SortOrder,
+                            IsActive = pi.IsActive
+                        })
+                        .ToListAsync();
+
+                    // Only replace if we got actual images
+                    if (additionalImages != null && additionalImages.Any())
+                    {
+                        product.AdditionalImages = additionalImages;
+                    }
+                }
+                catch (Exception imgEx)
+                {
+                    // Log but don't break the entire request
+                    // product.AdditionalImages remains as empty list
+                    Console.WriteLine($"Warning: Could not load product images: {imgEx.Message}");
+                }
+
                 return Ok(product);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, new { error = ex.Message, stack = ex.StackTrace });
             }
-
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduct(int id, [FromForm] ProductDto dto)

@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { Product } from '../models/product';
+import { ProductImage } from '../models/ProductImage';
 
 @Injectable({
   providedIn: 'root'
@@ -65,6 +66,49 @@ export class ProductAdminService {
   getAllCategories():any{
     return this.http.get<any>(`${this.baseUrl}/api/Master/GetAllCategories`);
   }
+ // ✅ Upload Product Image
+  uploadProductImage(formData: FormData): Observable<ProductImage> {
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${localStorage.getItem('authToken') || ''}`
+    });
+    return this.http.post<ProductImage>(
+      `${this.baseUrl}/api/Products/ProductImages`,
+      formData,
+      { headers }
+    );
+  }
 
-  
+  // ✅ Get Product Images by Product ID
+  getProductImages(productId: number): Observable<ProductImage[]> {
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${localStorage.getItem('authToken') || ''}`
+    });
+    return this.http.get<ProductImage[]>(
+      `${this.baseUrl}/api/ProductImages/byproduct/${productId}`,
+      { headers }
+    );
+  }
+
+  // ✅ Delete Product Image
+  deleteProductImage(imageId: number): Observable<void> {
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${localStorage.getItem('authToken') || ''}`
+    });
+    return this.http.delete<void>(
+      `${this.baseUrl}/api/ProductImages/${imageId}`,
+      { headers }
+    );
+  }
+
+  // ✅ Update Product Image Sort Order
+  updateProductImageSortOrder(imageId: number, sortOrder: number): Observable<void> {
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${localStorage.getItem('authToken') || ''}`
+    });
+    return this.http.put<void>(
+      `${this.baseUrl}/api/ProductImages/${imageId}/sortorder`,
+      sortOrder,
+      { headers }
+    );
+  }
 }

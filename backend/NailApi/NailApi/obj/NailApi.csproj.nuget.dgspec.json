@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\NailApi.csproj": {}
+    "C:\\Vinod\\VS Test Project\\V-19\\NailApplication\\backend\\NailApi\\NailApi\\NailApi.csproj": {}
   },
   "projects": {
-    "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\NailApi.csproj": {
+    "C:\\Vinod\\VS Test Project\\V-19\\NailApplication\\backend\\NailApi\\NailApi\\NailApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\NailApi.csproj",
+        "projectUniqueName": "C:\\Vinod\\VS Test Project\\V-19\\NailApplication\\backend\\NailApi\\NailApi\\NailApi.csproj",
         "projectName": "NailApi",
-        "projectPath": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\NailApi.csproj",
+        "projectPath": "C:\\Vinod\\VS Test Project\\V-19\\NailApplication\\backend\\NailApi\\NailApi\\NailApi.csproj",
         "packagesPath": "C:\\Users\\vinod\\.nuget\\packages\\",
-        "outputPath": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\obj\\",
+        "outputPath": "C:\\Vinod\\VS Test Project\\V-19\\NailApplication\\backend\\NailApi\\NailApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

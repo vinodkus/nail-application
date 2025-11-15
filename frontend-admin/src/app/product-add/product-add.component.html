@@ -97,7 +97,6 @@
             accept="image/*"
           />
         </div>
-
         <!-- Image Preview -->
         <div class="col-md-6">
           <label class="form-label">Image Preview</label>
@@ -111,7 +110,34 @@
             />
             <p *ngIf="!imagePreview" class="text-muted">No image selected</p> </div>
         </div>  
+
         <!-- Error Message -->
+<div class="col-12" *ngIf="isEditMode">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h5 class="text-primary mb-0">📸 Product Images</h5>
+    <button 
+      type="button" 
+      class="btn btn-outline-primary btn-sm"
+      (click)="openImageUploadModal()"
+    >
+      <i class="bi bi-plus-circle"></i> Add More Product Images
+    </button>
+  </div>
+  
+  <!-- Current Images Preview (if any) -->
+  <div class="current-images-preview mb-3" *ngIf="existingImages && existingImages.length > 0">
+    <h6 class="text-muted mb-2">Current Images ({{existingImages.length}})</h6>
+    <div class="d-flex flex-wrap gap-2">
+      <div 
+        *ngFor="let img of existingImages; let i = index" 
+        class="image-thumbnail position-relative"
+      >
+        <img [src]="img.imageUrl" [alt]="'Product image ' + (i+1)" class="img-thumbnail">
+        <span class="badge bg-secondary position-absolute top-0 start-0">{{i+1}}</span>
+      </div>
+    </div>
+  </div>
+</div>
 
         <!-- Is Active -->
         <div class="col-md-6">
@@ -141,5 +167,161 @@
         </div>
       </div>
     </form>
+  </div>
+</div>
+<!-- Image Upload Modal -->
+<div 
+  class="modal fade" 
+  id="imageUploadModal" 
+  tabindex="-1" 
+  aria-labelledby="imageUploadModalLabel" 
+  aria-hidden="true"
+  data-bs-backdrop="false"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow">
+      
+      <!-- Modal Header -->
+      <div class="modal-header bg-gradient-primary text-white">
+        <h5 class="modal-title" id="imageUploadModalLabel">
+          <i class="bi bi-cloud-upload me-2"></i>
+          Upload Product Images
+        </h5>
+        <button 
+          type="button" 
+          class="btn-close btn-close-white" 
+          data-bs-dismiss="modal" 
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body p-4">
+        
+        <!-- Upload Area -->
+        <div 
+          class="upload-area border-2 border-dashed rounded-3 p-5 text-center mb-4"
+          (drop)="onFileDrop($event)"
+          (dragover)="onDragOver($event)"
+          (dragleave)="onDragLeave($event)"
+          [class.bg-light]="!isDragOver"
+          [class.bg-primary-subtle]="isDragOver"
+          [class.border-primary]="isDragOver"
+        >
+          <i class="bi bi-cloud-arrow-up display-4 text-muted mb-3"></i>
+          <h5 class="text-muted mb-2">Drop your images here</h5>
+          <p class="text-muted mb-3">or</p>
+          
+          <input 
+            type="file" 
+             #modalFileInput
+            (change)="onFilesSelected($event)"
+            accept="image/*" 
+            multiple
+            class="d-none"
+          />
+          
+          <button 
+            type="button" 
+            class="btn btn-primary btn-lg"
+            (click)="modalFileInput.click()"
+          >
+            <i class="bi bi-folder2-open me-2"></i>Browse Files
+          </button>
+          
+          <p class="small text-muted mt-3 mb-0">
+            Supports: JPG, PNG, GIF, WebP • Max 5MB per image
+          </p>
+        </div>
+
+        <!-- Selected Files Preview -->
+        <div class="selected-files-section" *ngIf="selectedFiles.length > 0">
+          <h6 class="text-success mb-3">
+            <i class="bi bi-check-circle me-1"></i>
+            {{selectedFiles.length}} file(s) selected
+          </h6>
+          
+         <!-- In your modal template -->
+<div class="row g-2 mb-4">
+  <div 
+    class="col-6 col-md-4 col-lg-3" 
+    *ngFor="let fileItem of selectedFiles; let i = index"
+  >
+    <div class="selected-file-card position-relative">
+      <img 
+        [src]="fileItem.preview" 
+        [alt]="fileItem.file.name"
+        class="img-fluid rounded border"
+      >
+      <div class="file-info p-2">
+        <p class="small text-truncate mb-1">{{ fileItem.file.name }}</p>
+        <p class="small text-muted mb-0">{{ getFileSize(fileItem.file.size) }}</p>
+      </div>
+      <button 
+        type="button" 
+        class="btn-remove btn btn-sm btn-danger position-absolute top-0 end-0 m-1"
+        (click)="removeFile(i)"
+      >
+        <i class="bi bi-x"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+          <!-- Upload Progress -->
+          <div class="upload-progress mb-3" *ngIf="isUploading">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="text-primary">Uploading...</span>
+              <span class="text-muted small">{{uploadProgress}}%</span>
+            </div>
+            <div class="progress" style="height: 8px;">
+              <div 
+                class="progress-bar progress-bar-striped progress-bar-animated" 
+                [style.width]="uploadProgress + '%'"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Upload Button -->
+          <div class="text-center">
+            <button 
+              type="button" 
+              class="btn btn-success btn-lg px-5"
+              (click)="uploadImages()"
+              [disabled]="isUploading || selectedFiles.length === 0"
+            >
+              <i class="bi bi-cloud-check me-2"></i>
+              {{isUploading ? 'Uploading...' : 'Upload Images'}}
+            </button>
+          </div>
+        </div>
+
+        <!-- Empty State -->
+        <div class="text-center text-muted py-4" *ngIf="selectedFiles.length === 0 && !isUploading">
+          <i class="bi bi-images display-4 opacity-50"></i>
+          <p class="mt-2">No images selected yet</p>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer bg-light">
+        <button 
+          type="button" 
+          class="btn btn-outline-secondary" 
+          data-bs-dismiss="modal"
+        >
+          <i class="bi bi-x-circle me-1"></i>Cancel
+        </button>
+        <button 
+          type="button" 
+          class="btn btn-outline-primary"
+          (click)="modalFileInput.click()" 
+        >
+          <i class="bi bi-plus-circle me-1"></i>Add More
+        </button>
+      </div>
+
+    </div>
   </div>
 </div>

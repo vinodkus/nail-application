@@ -15,7 +15,7 @@ namespace NailApi.DtoResponse
         public string CategoryName { get; set; } = string.Empty;
         public string ProductImageUrl { get; set; } = string.Empty;
         public bool IsActive { get; set; } = true;
-        public List<ProductImageDto>? AdditionalImages { get; set; }
+        public List<ProductImageDto> AdditionalImages { get; set; } = new List<ProductImageDto>(); // Initialize here
 
     }
 }

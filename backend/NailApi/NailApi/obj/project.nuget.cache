@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7bM7KVJT03g=",
+  "dgSpecHash": "5+LE9RQJdrI=",
   "success": true,
-  "projectFilePath": "C:\\Vinod\\VS Test Project\\V-19\\Test\\NailApi\\NailApi\\NailApi.csproj",
+  "projectFilePath": "C:\\Vinod\\VS Test Project\\V-19\\NailApplication\\backend\\NailApi\\NailApi\\NailApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vinod\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\vinod\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

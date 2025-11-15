@@ -834,7 +834,7 @@
         }
       }
     },
-    "/api/Products/AddProductImage": {
+    "/api/Products/ProductImages": {
       "post": {
         "tags": [
           "Products"

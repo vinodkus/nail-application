@@ -40,7 +40,7 @@ namespace NailApi.Data
             modelBuilder.Entity<Order>().ToTable("nl_Orders");
             modelBuilder.Entity<OrderItem>().ToTable("nl_OrderItems");
             modelBuilder.Entity<Payment>().ToTable("nl_Payments");
-
+            modelBuilder.Entity<ProductImage>().ToTable("nl_ProductImages");
             // Define keys (keep existing logic)
             modelBuilder.Entity<Order>().HasKey(o => o.OrderId);
             modelBuilder.Entity<Order>().Property(o=>o.Status).HasDefaultValue(OrderStatus.Pending); // Default status to 0 (Pending)

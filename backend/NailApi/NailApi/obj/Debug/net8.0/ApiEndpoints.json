@@ -609,32 +609,6 @@
   },
   {
     "ContainingType": "NailApi.Controllers.ProductsController",
-    "Method": "AddProductImage",
-    "RelativePath": "api/Products/AddProductImage",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ProductId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Image",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "SortOrder",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NailApi.Controllers.ProductsController",
     "Method": "DeleteProductImage",
     "RelativePath": "api/Products/DeleteProductImage/{imageId}",
     "HttpMethod": "DELETE",
@@ -760,6 +734,32 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "NailApi.Controllers.ProductsController",
+    "Method": "AddProductImage",
+    "RelativePath": "api/Products/ProductImages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortOrder",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "NailApi.Controllers.ProductsController",
